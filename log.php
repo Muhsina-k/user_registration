@@ -5,7 +5,7 @@ if(isset($_POST['button']))
 {
 	$Username=$_POST['usename'];
 	$Password=$_POST['password'];
-	$result=mysqli_query($con,"SELECT `Username`, `Password` 
+	$result=mysqli_query($con,"SELECT * 
 	FROM `registration_table` WHERE  Username ='$Username'AND Password ='$Password'");
 	if(mysqli_num_rows($result)==1)
 	{
